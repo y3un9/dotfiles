@@ -2,9 +2,8 @@ bash
 vim
 tmux
 neofetch
-libtool
 wget
 htop
-openssl
+libtool
 cmake
 mysql
