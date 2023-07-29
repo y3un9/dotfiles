@@ -61,7 +61,7 @@ let g:currentmode={
     \ 'no'  : 'Normal Operator Pending',
     \ 'v'   : 'Visual',
     \ 'V'   : 'V·Line',
-    \ '^V'  : 'V·Block',
+    \ "\<C-v>"  : 'V·Block',
     \ 's'   : 'Select',
     \ 'S'   : 'S·Line',
     \ '^S'  : 'S·Block',

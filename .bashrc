@@ -120,14 +120,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export windows_host=`cat /etc/resolv.conf|grep nameserver|awk '{print $2}'`
-export ALL_PROXY=socks5://$windows_host:10810
-export HTTP_PROXY=$ALL_PROXY
-export http_proxy=$ALL_PROXY
-export HTTPS_PROXY=$ALL_PROXY
-export https_proxy=$ALL_PROXY
-
-if [ "`git config --global --get proxy.https`" != "socks5://$windows_host:10810" ]; then
-            git config --global proxy.https socks5://$windows_host:10810
-fi
-. "$HOME/.cargo/env"
+#export windows_host=`cat /etc/resolv.conf|grep nameserver|awk '{print $2}'`
+#export ALL_PROXY=socks5://$windows_host:10810
+#export HTTP_PROXY=$ALL_PROXY
+#export http_proxy=$ALL_PROXY
+#export HTTPS_PROXY=$ALL_PROXY
+#export https_proxy=$ALL_PROXY
+#
+#if [ "`git config --global --get proxy.https`" != "socks5://$windows_host:10810" ]; then
+#            git config --global proxy.https socks5://$windows_host:10810
+#fi

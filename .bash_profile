@@ -18,16 +18,7 @@ export CLICOLOR=1
 
 export HISTTIMEFORMAT='%F %T  '
 
-#export PATH=$PATH:$HOME/Library/Python/3.10/bin
-
-# Lines below can turn on feature of shell bindings for "vcs.branch" on tmux powerline status, but it will also change the prompt to powerline style. But by setting "~/.config/powerline/config.json" ext.shell.components='tmux' can tmux powerline bindings without changing shell prompt.
-#powerline-daemon -q
-#. /Users/yeung/Library/Python/3.10/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
-
-# Flutter
-export PATH=$PATH:$HOME/Developers/flutter/bin
-
 # Proxy
-export http_proxy=http://127.0.0.1:1087;
-export https_proxy=http://127.0.0.1:1087;
-export ALL_PROXY=socks5://127.0.0.1:1080;
+#export http_proxy=http://127.0.0.1:1087;
+#export https_proxy=http://127.0.0.1:1087;
+#export ALL_PROXY=socks5://127.0.0.1:1080;
