@@ -1,0 +1,16 @@
+@vercel/ncc
+@vscode/vsce
+corepack
+create-electron-app
+create-next-app
+create-react-app
+nodemon
+npm
+nrm
+pm2
+pnpm
+serve
+ts-node
+typescript
+vite
+yarn

@@ -2,6 +2,8 @@
 	quotepath = false
 	fileMode = false
 	ignorecase = false
+[pull]
+  rebase = false
 [user]
 	name = y3un9
 	email = 779197488@qq.com
