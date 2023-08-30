@@ -27,9 +27,10 @@ set showcmd
 set showmode
 set showmatch
 
+set expandtab
 set shiftwidth=2
 set tabstop=2
-set expandtab
+set softtabstop=2
 set smarttab
 set autoindent
 set smartindent
