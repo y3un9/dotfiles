@@ -1,9 +1,12 @@
 [core]
-	quotepath = false
-	fileMode = false
-	ignorecase = false
+  editor = vim
+  fileMode = false
+  quotepath = false
+  ignorecase = false
+[user]
+  name = y3un9
+  email = 779197488@qq.com
 [pull]
   rebase = false
-[user]
-	name = y3un9
-	email = 779197488@qq.com
+[init]
+  defaultBranch = main
