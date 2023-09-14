@@ -1,9 +1,13 @@
 @vercel/ncc
 @vscode/vsce
+@vue/cli
+babel-cli
 corepack
 create-electron-app
 create-next-app
 create-react-app
+gitignore
+gulp-cli
 nodemon
 npm
 nrm
@@ -13,4 +17,6 @@ serve
 ts-node
 typescript
 vite
+webpack-cli
 yarn
+zx
