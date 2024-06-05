@@ -9,3 +9,4 @@ cmake
 mysql
 ffmpeg
 hugo
+w3m
