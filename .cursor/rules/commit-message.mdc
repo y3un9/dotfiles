@@ -1,0 +1,111 @@
+---
+description: Commit message conventions. Use whenever a commit message is requested — output both a detailed and a short version, follow the "TNS-XXXX type(scope): subject" format, and end with the model co-author trailer.
+alwaysApply: false
+---
+
+# Commit Messages
+
+**Whenever a commit message is requested, always give both versions.**
+
+Output them in this order, each in its own code block:
+
+1. **Detailed** — the subject line, a blank line, then a body explaining what
+   changed and why, then the co-author trailer.
+2. **Short** — the subject line, a blank line, then the co-author trailer. No body.
+
+Only output the message. Never run `git commit` unless explicitly asked to.
+
+## Scope of changes
+
+**Default to the most recent (incremental) change only** — the delta since the last
+commit-message request, not the whole accumulated working-tree diff. Cover the full or
+cumulative diff only when the user explicitly asks for "all changes" (or similar).
+
+## Subject line
+
+```
+TNS-XXXX type(scope): subject
+```
+
+- `TNS-XXXX` — the Jira ticket, taken from the current branch name. If the branch
+  has no ticket, ask for one; drop the prefix only if there genuinely isn't one.
+- `type` — Conventional Commits: `feat`, `fix`, `refactor`, `chore`, `docs`, `test`.
+- `(scope)` — optional; a feature area such as `(Turbo Live)`, `(api)`, `(sidebar)`.
+- `subject` — English, imperative mood, no trailing period.
+
+## Co-author trailer
+
+Every message Claude writes ends, after a blank line, with a trailer naming the
+model that actually did the work:
+
+```
+Co-Authored-By: Claude <model> <noreply@anthropic.com>
+```
+
+`<model>` is the model running the session, written the way it names itself —
+`Opus 4.8 (1M context)`, `Sonnet 5`, `Haiku 4.5`, and so on. Never copy the model
+from the examples below; read it off the current session. Different sessions use
+different models, so the trailer differs commit to commit — that is expected.
+
+Where the harness prescribes an exact trailer line for the session's model, use
+that line verbatim.
+
+## Example
+
+```
+TNS-1931 feat(rubric): unify the grading-rubric entry as name + weights
+
+The rubric entry was duplicated across the table modal and the detail page,
+so the two drifted apart. Both now render the same component.
+
+Co-Authored-By: Claude <model> <noreply@anthropic.com>
+```
+
+```
+TNS-1931 feat(rubric): unify the grading-rubric entry as name + weights
+
+Co-Authored-By: Claude <model> <noreply@anthropic.com>
+```
+
+## One commit covering several changes
+
+This is the common case. Keep it to a single subject line — do not emit one
+message per change.
+
+- The subject states the overall intent the changes share, not a list of them.
+  If they share no intent, say so and suggest splitting the commit.
+- The type is the most significant one across the changes (`feat` beats `fix`,
+  `fix` beats `refactor`/`chore`). Drop the scope when they span several areas.
+- The body lists one bullet per change, each naming what changed and why.
+- The short version stays a bare subject line, with no bullets.
+
+```
+TNS-1940 feat: return to the original page from the maintenance page
+
+- redirectOnOutage now passes the current path as a `from` query param so the
+  maintenance page knows where the user came from
+- maintenance.html sends the back button to `from` when it is a safe
+  same-origin path, and falls back to `/` otherwise
+- stop redirecting on `cannot-connect`, which fires on the client's own
+  network drops rather than a real backend outage
+
+Co-Authored-By: Claude <model> <noreply@anthropic.com>
+```
+
+## Reverts
+
+Keep the git convention — subject is `Revert "<original subject>"`, body says why
+it is being reverted.
+
+## Breaking changes
+
+Mark the type with `!` and add a footer describing the migration:
+
+```
+TNS-1950 feat(api)!: require an account id on every room request
+
+BREAKING CHANGE: callRoomApi callers must now pass accountId; requests without
+it are rejected with 400.
+
+Co-Authored-By: Claude <model> <noreply@anthropic.com>
+```
