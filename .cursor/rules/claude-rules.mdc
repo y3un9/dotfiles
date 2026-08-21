@@ -1,0 +1,14 @@
+---
+description: Follow Claude Code project rules as Cursor rules
+alwaysApply: true
+---
+
+# Use Claude rules
+
+If this repo has `CLAUDE.md` or `.claude/rules/`, treat them as Cursor rules.
+
+1. At the start of a task, read `CLAUDE.md`.
+2. Follow every file it imports under `.claude/rules/`.
+3. Also follow any other `.claude/rules/*.md` in that folder.
+4. Do not copy those files into `.cursor/rules/` unless the user asks.
+5. If a Cursor rule and a Claude rule conflict, follow the Claude/project rule unless the user says otherwise.
