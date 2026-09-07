@@ -12,6 +12,7 @@ MUST follow. These are the non-negotiables from every imported rule.
 ## concise-answers
 
 - Short by default. Lead with the answer. Expand only when asked.
+- Cite the smallest relevant code when it supports the answer; skip it otherwise.
 
 ## language-policy
 
@@ -26,10 +27,17 @@ MUST follow. These are the non-negotiables from every imported rule.
 - Subject: `TNS-XXXX type(scope): subject`. Ticket from the branch; ask if missing.
 - Default to the latest incremental change, not the whole diff.
 
+## plan-confirm
+
+- Before any edit, list files/modules, direction/goals, and risks; then stop.
+- Edit only after the user confirms and says to start.
+- After: plain-language report vs the plan, including existing behaviour impact.
+
 ## autonomous-agent
 
 - Short objective + scope required; if missing, ask once and wait.
-- Don't edit this prod checkout. Use a worktree first.
+- Don't edit until plan-confirm gets an explicit start.
+- Don't edit the current checkout. Use a worktree from the latest default/base (`prod`, `main`, …).
 - If the user gives `TNS-2020-what-to-do`, branch = that name, worktree = `../<repo>-TNS-2020`.
 - Don't merge, deploy, or push to prod/main/master. Open a PR and wait for review.
 - Stay in scope. Preserve behaviour. Run tests until pass or blocked.
@@ -48,5 +56,6 @@ Details:
 @.claude/rules/concise-answers.md
 @.claude/rules/language-policy.md
 @.claude/rules/commit-message.md
+@.claude/rules/plan-confirm.md
 @.claude/rules/autonomous-agent.md
 @.claude/rules/ponytail.md

@@ -13,6 +13,7 @@ injected as context; follow them as if they were Cursor rules.
 @.claude/rules/concise-answers.md
 @.claude/rules/language-policy.md
 @.claude/rules/commit-message.md
+@.claude/rules/plan-confirm.md
 @.claude/rules/autonomous-agent.md
 @.claude/rules/ponytail.md
 
