@@ -12,7 +12,7 @@ List:
 - Direction and goal of each change
 - Risks, including existing behaviour that might be affected
 
-Then stop. Do not start a worktree, checkout, or edit yet.
+Then stop. Do not checkout, commit, or edit yet.
 
 ## Start only on explicit go
 
@@ -27,5 +27,6 @@ Explain as if to a non-engineer:
 - What changed
 - How that compares to the planned goals (matched / missed / extra)
 - What existing behaviour is affected, or that nothing else is
+- Commit messages (see commit-message). Say whether anything was committed or PR'd — default is no.
 
 This report is the exception to concise-answers: prefer plain language over brevity.

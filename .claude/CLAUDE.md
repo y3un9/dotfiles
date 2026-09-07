@@ -22,8 +22,7 @@ MUST follow. These are the non-negotiables from every imported rule.
 
 ## commit-message
 
-- Don't commit unless explicitly asked.
-- When a message is requested, output detailed then short, both with Co-Authored-By.
+- After edits (and when requested), output detailed then short, both with Co-Authored-By. Don't commit, push, or open a PR unless explicitly asked.
 - Subject: `TNS-XXXX type(scope): subject`. Ticket from the branch; ask if missing.
 - Default to the latest incremental change, not the whole diff.
 
@@ -31,15 +30,17 @@ MUST follow. These are the non-negotiables from every imported rule.
 
 - Before any edit, list files/modules, direction/goals, and risks; then stop.
 - Edit only after the user confirms and says to start.
-- After: plain-language report vs the plan, including existing behaviour impact.
+- After: plain-language report vs the plan, including existing behaviour impact and commit messages (not committed unless asked).
 
 ## autonomous-agent
 
 - Short objective + scope required; if missing, ask once and wait.
 - Don't edit until plan-confirm gets an explicit start.
-- Don't edit the current checkout. Use a worktree from the latest default/base (`prod`, `main`, …).
-- If the user gives `TNS-2020-what-to-do`, branch = that name, worktree = `../<repo>-TNS-2020`.
-- Don't merge, deploy, or push to prod/main/master. Open a PR and wait for review.
+- Work in the current workspace. No worktree.
+- If the user gives `TNS-2020-what-to-do`, branch = that name. Current branch must match; stop and ask if not. Do not checkout.
+- If the user does not give a branch name, pick a reasonable one; still stop if current is the wrong branch.
+- If the working tree or index is dirty, stop and ask (unless it is this task's in-progress work).
+- Don't commit, push, or open a PR unless explicitly asked. Don't merge/deploy/push to prod/main/master.
 - Stay in scope. Preserve behaviour. Run tests until pass or blocked.
 
 ## ponytail

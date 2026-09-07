@@ -1,6 +1,7 @@
 # Commit Messages
 
-**Whenever a commit message is requested, always give both versions.**
+**After finishing edits, and whenever a commit message is requested, always
+give both versions.** Do not wait for the user to ask after a coding task.
 
 Output them in this order, each in its own code block:
 
@@ -8,7 +9,9 @@ Output them in this order, each in its own code block:
    changed and why, then the co-author trailer.
 2. **Short** — the subject line, a blank line, then the co-author trailer. No body.
 
-Only output the message. Never run `git commit` unless explicitly asked to.
+Only output the message unless the user explicitly asked to commit and/or open
+a PR. Never run `git add`, `git commit`, `git push`, or `gh pr create` without
+that ask. The user decides whether to commit now or later.
 
 ## Scope of changes
 
