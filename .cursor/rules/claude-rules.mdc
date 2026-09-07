@@ -5,10 +5,16 @@ alwaysApply: true
 
 # Use Claude rules
 
-If this repo has `CLAUDE.md` or `.claude/rules/`, treat them as Cursor rules.
+`.claude/rules/` is the single source of truth for this repo. The files below are
+injected as context; follow them as if they were Cursor rules.
 
-1. At the start of a task, read `CLAUDE.md`.
-2. Follow every file it imports under `.claude/rules/`.
-3. Also follow any other `.claude/rules/*.md` in that folder.
-4. Do not copy those files into `.cursor/rules/` unless the user asks.
-5. If a Cursor rule and a Claude rule conflict, follow the Claude/project rule unless the user says otherwise.
+@CLAUDE.md
+@.claude/rules/karpathy-guidelines.md
+@.claude/rules/concise-answers.md
+@.claude/rules/language-policy.md
+@.claude/rules/commit-message.md
+@.claude/rules/autonomous-agent.md
+@.claude/rules/ponytail.md
+
+If a Cursor rule and a Claude rule conflict, follow the Claude rule unless the
+user says otherwise. Do not copy these files into `.cursor/rules/`.
