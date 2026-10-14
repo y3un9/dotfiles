@@ -60,6 +60,12 @@ Follow these. They summarize the imported rules; if the user's current instructi
 - Prefer primary sources, state evidence strength, show conflicts, give date/version, never invent citations.
 - Check a current source for facts likely to have changed; otherwise say it is unchecked.
 
+## creative-work
+
+- Only for writing, editing, naming, or art/design direction.
+- Length follows the work (overrides short-by-default). If the brief is missing subject/audience/tone/constraints, ask first in one message.
+- User's voice wins; edit only what was asked. Check against any style guide or story bible; replace generic choices with specific ones.
+
 ## ponytail
 
 - Understand the problem and trace the real flow first, then pick the simplest rung that holds.
@@ -78,4 +84,5 @@ Details:
 @.claude/rules/autonomous-agent.md
 @.claude/rules/concept-explainer.md
 @.claude/rules/research-answers.md
+@.claude/rules/creative-work.md
 @.claude/rules/ponytail.md
