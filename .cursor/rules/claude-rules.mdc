@@ -1,22 +1,18 @@
 ---
-description: Follow Claude Code project rules as Cursor rules
+description: Follow Claude Code rules as Cursor rules
 alwaysApply: true
 ---
 
 # Use Claude rules
 
-`.claude/rules/` is the single source of truth for this repo. The files below are
-injected as context; follow them as if they were Cursor rules.
+Shared rules live in `.claude/rules/`. For each rule below, read the file in
+this repo first; if it does not exist, read `~/.claude/rules/<same name>`.
+A repo-level file replaces the global one of the same name.
 
-@CLAUDE.md
-@.claude/rules/karpathy-guidelines.md
-@.claude/rules/concise-answers.md
-@.claude/rules/language-policy.md
-@.claude/rules/commit-message.md
-@.claude/rules/plan-confirm.md
-@.claude/rules/autonomous-agent.md
-@.claude/rules/concept-explainer.md
-@.claude/rules/ponytail.md
+Rules: karpathy-guidelines, concise-answers, language-policy, commit-message,
+plan-confirm, autonomous-agent, concept-explainer, ponytail
+
+Also read `.claude/CLAUDE.md` (fall back to `~/.claude/CLAUDE.md`) for the summary.
 
 If a Cursor rule and a Claude rule conflict, follow the Claude rule unless the
 user says otherwise. Do not copy these files into `.cursor/rules/`.
