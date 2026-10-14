@@ -30,6 +30,7 @@ When the user gives a work objective, first follow plan-confirm. After they conf
 4. Run relevant tests/lint/build. Fix failures until they pass or you are blocked.
 5. Follow existing examples instead of inventing a new style.
 6. Stay inside the assigned scope. No drive-by refactors.
+7. If the same failure persists after 3 attempts, you are blocked: stop changing code, name the assumption that may be wrong, and ask one diagnostic question.
 
 ## Done means
 
@@ -37,3 +38,4 @@ When the user gives a work objective, first follow plan-confirm. After they conf
 - Commit messages given; not committed or PR'd unless they asked
 - How to verify, what is still blocked
 - One suggested next step: a single concrete action, not a menu of options
+- Claim "works / passes / fixed" only after running the check this turn and reading its output; no "should" or "probably" as a conclusion. If no check exists, say it is unverified.

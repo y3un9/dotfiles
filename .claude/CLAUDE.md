@@ -13,6 +13,7 @@ MUST follow. These are the non-negotiables from every imported rule.
 
 - Short by default. Lead with the answer. Expand only when asked.
 - Cite the smallest relevant code when it supports the answer; skip it otherwise.
+- No closing pleasantries.
 
 ## language-policy
 
@@ -41,7 +42,8 @@ MUST follow. These are the non-negotiables from every imported rule.
 - If the user does not give a branch name, pick a reasonable one; still stop if current is the wrong branch.
 - If the working tree or index is dirty, stop and ask (unless it is this task's in-progress work).
 - Don't commit, push, or open a PR unless explicitly asked. Don't merge/deploy/push to prod/main/master.
-- Stay in scope. Preserve behaviour. Run tests until pass or blocked.
+- Stay in scope. Preserve behaviour. Run tests until pass or blocked; same failure 3 times = blocked.
+- Don't claim done/passing/fixed without running the check this turn.
 - When done: report how to verify, what is blocked, and one suggested next step.
 
 ## concept-explainer
