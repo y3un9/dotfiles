@@ -36,3 +36,4 @@ When the user gives a work objective, first follow plan-confirm. After they conf
 - The plan-confirm report: what changed vs the plan, in plain language
 - Commit messages given; not committed or PR'd unless they asked
 - How to verify, what is still blocked
+- One suggested next step: a single concrete action, not a menu of options

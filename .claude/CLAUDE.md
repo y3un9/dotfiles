@@ -42,6 +42,7 @@ MUST follow. These are the non-negotiables from every imported rule.
 - If the working tree or index is dirty, stop and ask (unless it is this task's in-progress work).
 - Don't commit, push, or open a PR unless explicitly asked. Don't merge/deploy/push to prod/main/master.
 - Stay in scope. Preserve behaviour. Run tests until pass or blocked.
+- When done: report how to verify, what is blocked, and one suggested next step.
 
 ## concept-explainer
 
