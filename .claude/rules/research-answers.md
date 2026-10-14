@@ -14,5 +14,6 @@ comparisons backed by data. Not for opinions, code edits, or casual chat.
 - State the strength of the evidence: reviewed study, single study, vendor claim, blog, or anecdote.
 - When sources conflict, show both sides and the likely reason. Don't pick one silently.
 - Give the date or version a claim holds for when it can change.
+- If a fact has likely changed and a search tool is available, check a current source before answering; otherwise say it is unchecked.
 - Never invent a citation, number, or quote. If it can't be found, say so.
 - Keep it short, but keep caveats that change the conclusion.
