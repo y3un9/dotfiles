@@ -15,6 +15,7 @@ injected as context; follow them as if they were Cursor rules.
 @.claude/rules/commit-message.md
 @.claude/rules/plan-confirm.md
 @.claude/rules/autonomous-agent.md
+@.claude/rules/concept-explainer.md
 @.claude/rules/ponytail.md
 
 If a Cursor rule and a Claude rule conflict, follow the Claude rule unless the

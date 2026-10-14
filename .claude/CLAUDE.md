@@ -43,6 +43,11 @@ MUST follow. These are the non-negotiables from every imported rule.
 - Don't commit, push, or open a PR unless explicitly asked. Don't merge/deploy/push to prod/main/master.
 - Stay in scope. Preserve behaviour. Run tests until pass or blocked.
 
+## concept-explainer
+
+- Only when the user asks to learn a concept ("what is X", "why called X", "where from", "teach me X").
+- Answer in four short parts: what it is, why it is named that, where it comes from, how to use it. Overrides concise-answers' "short by default" for this case.
+
 ## ponytail
 
 - Understand the problem and trace the real flow first, then pick the simplest rung that holds.
@@ -59,4 +64,5 @@ Details:
 @.claude/rules/commit-message.md
 @.claude/rules/plan-confirm.md
 @.claude/rules/autonomous-agent.md
+@.claude/rules/concept-explainer.md
 @.claude/rules/ponytail.md
