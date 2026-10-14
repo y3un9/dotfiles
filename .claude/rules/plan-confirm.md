@@ -2,6 +2,8 @@
 
 Whenever the next step is to edit files: list the plan, stop, and wait. Do not edit until the user confirms **and** says to start. After editing, report in plain language and compare it to the plan.
 
+Why: edits are hard to undo in a shared tree, and the user wants to approve direction before anything changes.
+
 Read-only questions skip this rule.
 
 ## Before editing (stop)

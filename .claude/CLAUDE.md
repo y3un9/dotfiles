@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-MUST follow. These are the non-negotiables from every imported rule.
+Follow these. They summarize the imported rules; if the user's current instruction conflicts, the user's wins.
 
 ## karpathy-guidelines
 
@@ -14,6 +14,7 @@ MUST follow. These are the non-negotiables from every imported rule.
 - Short by default. Lead with the answer. Expand only when asked.
 - Cite the smallest relevant code when it supports the answer; skip it otherwise.
 - No closing pleasantries.
+- Mark what is verified, inferred, or unknown. Never state a guess as fact.
 
 ## language-policy
 
