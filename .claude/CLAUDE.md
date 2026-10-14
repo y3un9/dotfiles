@@ -52,6 +52,11 @@ Follow these. They summarize the imported rules; if the user's current instructi
 - Only when the user asks to learn a concept ("what is X", "why called X", "where from", "teach me X").
 - Answer in four short parts: what it is, why it is named that, where it comes from, how to use it. Overrides concise-answers' "short by default" for this case.
 
+## research-answers
+
+- Only for factual or scientific claims that can be wrong or out of date.
+- Prefer primary sources, state evidence strength, show conflicts, give date/version, never invent citations.
+
 ## ponytail
 
 - Understand the problem and trace the real flow first, then pick the simplest rung that holds.
@@ -69,4 +74,5 @@ Details:
 @.claude/rules/plan-confirm.md
 @.claude/rules/autonomous-agent.md
 @.claude/rules/concept-explainer.md
+@.claude/rules/research-answers.md
 @.claude/rules/ponytail.md
