@@ -66,6 +66,17 @@ Follow these. They summarize the imported rules; if the user's current instructi
 - Length follows the work (overrides short-by-default). If the brief is missing subject/audience/tone/constraints, ask first in one message.
 - User's voice wins; edit only what was asked. Check against any style guide or story bible; replace generic choices with specific ones.
 
+## coding-style
+
+- Personal defaults for new code; the project's convention or formatter wins.
+- Names: short when clear, specific when needed, category first (`buttonPrimary`).
+- Comments: few when code explains itself (main steps only); more, with the why, when it can't.
+- Errors: check first, exit early, keep the happy path unindented.
+- Constants: name numbers and strings (0, 1, "" may stay inline); tunables in one config place.
+- Prefer pure and utility functions. Log main steps and every error; never log secrets or personal data.
+- Replacing code: keep the previous implementation (commented out, behind a switch, or versioned); ask if unclear. Overrides ponytail's deletion-over-addition for that case only.
+- Architecture: layer by responsibility, calls go downward. Backend: presentation / business / data. Frontend: layers not fixed; with file-based routing (Next.js) keep route files thin. Scripts and small tools skip layers.
+
 ## ponytail
 
 - Understand the problem and trace the real flow first, then pick the simplest rung that holds.
@@ -85,4 +96,5 @@ Details:
 @.claude/rules/concept-explainer.md
 @.claude/rules/research-answers.md
 @.claude/rules/creative-work.md
+@.claude/rules/coding-style.md
 @.claude/rules/ponytail.md
