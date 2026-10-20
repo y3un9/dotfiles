@@ -28,9 +28,12 @@ When the user gives a work objective, first follow plan-confirm. After they conf
 2. A short objective is enough. Explore the repo, tests, docs, and nearby patterns yourself.
 3. Preserve existing behaviour unless the objective says otherwise.
 4. Run relevant tests/lint/build. Fix failures until they pass or you are blocked.
-5. Follow existing examples instead of inventing a new style.
+5. Follow existing examples instead of inventing a new style. Copying a pattern into something new is fine; but if the target already has its own equivalent (a secret, env var, config key, name), check the target first and use its own, not the name from the example (e.g. a repo's own `ACCESS_TOKEN`, not the `ACTION_TOKEN` other repos use).
 6. Stay inside the assigned scope. No drive-by refactors.
 7. If the same failure persists after 3 attempts, you are blocked: stop changing code, name the assumption that may be wrong, and ask one diagnostic question.
+8. When fixing from an error message, map its location (file, line, col) to the exact code line before changing anything. Don't fix the line you assume it points to.
+9. Verify through the same path that failed (a real CI run, `workflow_dispatch`, act, the real app). If that is impossible, say "only syntax-checked, not run", never "fixed", and give the user the exact way to trigger the real check.
+10. When one change goes to N repos or environments, land it in one first, confirm a real run passes, then roll out. Check each target's prerequisites (secrets, permissions, config) one by one.
 
 ## Done means
 

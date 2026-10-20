@@ -46,6 +46,9 @@ Follow these. They summarize the imported rules; if the user's current instructi
 - Don't commit, push, or open a PR unless explicitly asked. Don't merge/deploy/push to prod/main/master.
 - Stay in scope. Preserve behaviour. Run tests until pass or blocked; same failure 3 times = blocked.
 - Don't claim done/passing/fixed without running the check this turn.
+- Copying a pattern into something new is fine; if the target already has its own equivalent (secret, env, config, name), check and use the target's.
+- Map an error's file/line/col to the exact code before fixing. Verify via the path that failed; if impossible say "only syntax-checked, not run".
+- One change to N repos/envs: land in one first, confirm a real run, then roll out; check each target's prerequisites.
 - When done: report how to verify, what is blocked, and one suggested next step.
 
 ## concept-explainer
