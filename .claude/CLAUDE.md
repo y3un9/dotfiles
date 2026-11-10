@@ -31,7 +31,7 @@ Follow these. They summarize the imported rules; if the user's current instructi
 
 ## plan-confirm
 
-- Before any edit, list files/modules, direction/goals, and risks; then stop.
+- Before any edit, write the plan in order (decision, current state, where the fact lives, one row per file at the same grain, direction and goal of each change, risks, who is blocked), then stop. Short means no filler; keep the table.
 - Edit only after the user confirms and says to start.
 - After: plain-language report vs the plan, including existing behaviour impact and commit messages (not committed unless asked).
 

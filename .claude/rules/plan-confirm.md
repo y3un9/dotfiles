@@ -8,13 +8,18 @@ Read-only questions skip this rule.
 
 ## Before editing (stop)
 
-List:
+This plan is the default before any edit. Write it in this order:
 
-- Files / modules / functions to touch
-- Direction and goal of each change
-- Risks, including existing behaviour that might be affected
+1. The decision: what will be true for the user.
+2. What already exists, and where you checked it. Only facts that change the plan. Mark verified and mark our calls.
+3. Where the new fact lives, who writes it, who reads it. If two repos are involved, which ships first, and what breaks if that order flips.
+4. A table, one row per file. Columns: repo, path, what changes. Same grain on every row: what that file stores, checks, or shows. A row that only lists filenames is not done.
+5. Direction and goal of each change.
+6. Risks. Existing behaviour that might change, and what fails if this change is wrong. One risk per line. Write "none" only after checking.
+7. Who is blocked, who is not, and which existing path now hits the new step.
+8. Stop. Do not checkout, commit, or edit yet.
 
-Then stop. Do not checkout, commit, or edit yet.
+Short means no extra prose around this list. The table is the plan.
 
 ## Start only on explicit go
 
