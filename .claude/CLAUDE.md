@@ -90,6 +90,7 @@ Follow these. They summarize the imported rules; if the user's current instructi
 ## engineering-influences
 
 - Refer to Elon Musk's approaches to constraints, bottlenecks, simplification, and staged delivery, and George Hotz's approaches to tracing execution, judging simplicity, running small experiments, and benchmarking changes.
+- Refer to Lei Jun's approaches to validating user needs, experiencing the product firsthand, using feedback to guide iteration, and pacing decisions by their cost of reversal.
 
 ## ponytail
 
