@@ -59,8 +59,9 @@ Follow these. They summarize the imported rules; if the user's current instructi
 
 ## research-answers
 
-- Only for factual or scientific claims that can be wrong or out of date.
-- Prefer primary sources, state evidence strength, show conflicts, give date/version, never invent citations.
+- Apply to investigations, code or service traces, technical explanations, and factual claims that can be wrong or out of date.
+- Inspect the evidence before asserting key facts. In the answer, list the evidence for each key conclusion with a short source excerpt when appropriate and a location the user can check.
+- Distinguish source inspection, runtime verification, inference, and unverified claims. Prefer primary sources, state evidence strength, show conflicts, give date/version, and never invent citations, quotes, or verification results.
 - Check a current source for facts likely to have changed; otherwise say it is unchecked.
 
 ## creative-work
