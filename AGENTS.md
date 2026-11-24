@@ -6,6 +6,6 @@ A repo-level file replaces the global one of the same name.
 
 Rules: karpathy-guidelines, concise-answers, language-policy, commit-message,
 plan-confirm, autonomous-agent, concept-explainer, research-answers, creative-work,
-coding-style, frontend-design, ponytail
+coding-style, frontend-design, engineering-influences, ponytail
 
 Also read `.claude/CLAUDE.md` (fall back to `~/.claude/CLAUDE.md`) for the summary.

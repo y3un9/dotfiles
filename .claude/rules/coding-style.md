@@ -3,6 +3,10 @@
 **Personal defaults. If the project has its own convention or a formatter/linter
 rule, follow that. Apply to new code; don't rename or rewrite existing code.**
 
+When multiple implementations meet the project's requirements, prefer the one
+that is easier to read, verify, and maintain. Keep the clearer form when reducing
+the line count would make the logic harder to follow.
+
 ## Naming
 
 - Short when a short name is clear; specific when it must be. A specific name replaces a comment.

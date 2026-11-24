@@ -87,6 +87,10 @@ Follow these. They summarize the imported rules; if the user's current instructi
 - Check the affected flows on iOS and iPadOS Safari, macOS Safari, and Android Chrome. Verify feature support and provide usable fallbacks where needed.
 - Prefer current Apple, Android and Material, and Fluent guidance for clear, accessible layouts, interactions, and motion.
 
+## engineering-influences
+
+- Refer to Elon Musk's approaches to constraints, bottlenecks, simplification, and staged delivery, and George Hotz's approaches to tracing execution, judging simplicity, running small experiments, and benchmarking changes.
+
 ## ponytail
 
 - Understand the problem and trace the real flow first, then pick the simplest rung that holds.
@@ -108,4 +112,5 @@ Details:
 @.claude/rules/creative-work.md
 @.claude/rules/coding-style.md
 @rules/frontend-design.md
+@rules/engineering-influences.md
 @.claude/rules/ponytail.md
