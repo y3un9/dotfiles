@@ -35,9 +35,12 @@
     - [**Apple Vision Pro (visionOS)**](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos) for spatial hierarchy, comfortable motion, and choosing the level of immersion that suits the task.
   - Google [Android Design](https://developer.android.com/design/ui/mobile) and [Material Design](https://m3.material.io/).
   - Microsoft [Fluent Design](https://fluent2.microsoft.design/) and [Fluent UI](https://fluent2.microsoft.design/components/web/react).
-- For dashboards and control interfaces, use these cockpit designs as case studies where relevant.
+- For dashboards, monitoring views, and control interfaces, keep key status in a consistent, easy-to-scan location. Group related information with spacing, and keep readings legible over changing backgrounds such as maps and video.
+- Keep frequent actions easy to reach and separate high-impact commands from areas used for frequent clicks or taps. Show when a command has been sent, is running, succeeds, or fails. Flag stale data and lost connections when they affect the operator's view.
+- Use these cockpit designs as case studies where relevant.
   - [Tesla Model 3 touchscreen](https://www.tesla.com/ownersmanual/model3/en_gb/GUID-518C51C1-E9AC-4A68-AE12-07F4FF8C881E.html) for keeping key status visible, making frequent actions easy to reach, and opening temporary controls in context.
   - [firefly aster OS (紫菀)](https://www.firefly.world/news/20261109001) for adapting the home screen to the current situation and using coordinated feedback to make state changes clear.
+  - **SpaceX Crew Dragon** for readings that remain legible over a live camera feed and deliberate placement of critical commands. See the [crew display team's design notes](https://www.reddit.com/r/spacex/comments/ncj4vz/we_are_the_spacex_software_team_ask_us_anything/) and the [public docking simulator](https://iss-sim.spacex.com/).
 - Make the current task and primary action easy to identify. Use clear labels and show what the user can do next in loading, empty, error, and success states where relevant.
 - Check touch targets, keyboard navigation and visible focus, screen reader labels and status announcements, contrast, and reduced motion. Use motion when it helps explain a change or guides attention.
 
@@ -76,8 +79,11 @@
     - [**Apple Vision Pro（visionOS）**](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos)：参考空间层次、舒适的动效，以及按任务选择合适的沉浸程度。
   - Google 的 [Android Design](https://developer.android.com/design/ui/mobile) 和 [Material Design](https://m3.material.io/)。
   - Microsoft 的 [Fluent Design](https://fluent2.microsoft.design/) 和 [Fluent UI](https://fluent2.microsoft.design/components/web/react)。
-- 设计仪表盘和控制界面时，可以按场景参考以下车机案例。
+- 设计仪表盘、监控页和控制台时，把关键状态放在固定、容易扫读的位置。用留白组织相关信息，在地图或视频等不断变化的背景上也要让读数清楚可辨。
+- 让高频操作易达，把影响大的指令与高频点击或触控区域拉开距离。清楚显示指令已发出、执行中、成功或失败。数据过期或连接中断影响当前视图时，明确提示。
+- 按场景参考以下座舱界面案例。
   - [Tesla Model 3 触屏](https://www.tesla.com/ownersmanual/model3/en_gb/GUID-518C51C1-E9AC-4A68-AE12-07F4FF8C881E.html) 的关键状态常驻、高频操作易达，以及在当前界面展开临时控件。
   - [萤火虫 firefly aster OS（紫菀）](https://www.firefly.world/news/20261109001) 的场景化首页，以及用协调一致的交互反馈说明状态变化。
+  - **SpaceX Crew Dragon** 的实时摄像画面读数和关键指令位置设计，让读数在变化的背景上依然清楚，关键指令更容易有意触发。参见[显示团队的设计说明](https://www.reddit.com/r/spacex/comments/ncj4vz/we_are_the_spacex_software_team_ask_us_anything/)和[公开对接模拟器](https://iss-sim.spacex.com/)。
 - 让用户容易辨认当前任务和主要操作。使用清楚的标签，在适用的加载、空白、错误和成功状态下说明接下来能做什么。
 - 检查触控目标大小、键盘导航和可见焦点、屏幕阅读器标签和状态播报、对比度及减少动态效果设置。用动效说明变化或引导注意力。
