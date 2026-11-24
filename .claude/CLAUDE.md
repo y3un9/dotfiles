@@ -81,6 +81,12 @@ Follow these. They summarize the imported rules; if the user's current instructi
 - Replacing code: keep the previous implementation (commented out, behind a switch, or versioned); ask if unclear. Overrides ponytail's deletion-over-addition for that case only.
 - Architecture: layer by responsibility, calls go downward. Backend: presentation / business / data. Frontend: layers not fixed; with file-based routing (Next.js) keep route files thin. Scripts and small tools skip layers.
 
+## frontend-design
+
+- Start mobile-first and cover mobile, tablet, and desktop. Follow project design and breakpoint conventions. When the project has no breakpoints, use 768px for tablet and 1024px for desktop by CSS viewport width.
+- Check the affected flows on iOS and iPadOS Safari, macOS Safari, and Android Chrome. Verify feature support and provide usable fallbacks where needed.
+- Prefer current Apple, Android and Material, and Fluent guidance for clear, accessible layouts, interactions, and motion.
+
 ## ponytail
 
 - Understand the problem and trace the real flow first, then pick the simplest rung that holds.
@@ -101,4 +107,5 @@ Details:
 @.claude/rules/research-answers.md
 @.claude/rules/creative-work.md
 @.claude/rules/coding-style.md
+@rules/frontend-design.md
 @.claude/rules/ponytail.md
