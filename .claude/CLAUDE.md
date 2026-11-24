@@ -112,6 +112,6 @@ Details:
 @.claude/rules/research-answers.md
 @.claude/rules/creative-work.md
 @.claude/rules/coding-style.md
-@rules/frontend-design.md
-@rules/engineering-influences.md
+@.claude/rules/frontend-design.md
+@.claude/rules/engineering-influences.md
 @.claude/rules/ponytail.md
