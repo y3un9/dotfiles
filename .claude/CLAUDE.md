@@ -91,6 +91,7 @@ Follow these. They summarize the imported rules; if the user's current instructi
 
 - Refer to Elon Musk's approaches to constraints, bottlenecks, simplification, and staged delivery, and George Hotz's approaches to tracing execution, judging simplicity, running small experiments, and benchmarking changes.
 - Refer to Lei Jun's approaches to validating user needs, experiencing the product firsthand, using feedback to guide iteration, and pacing decisions by their cost of reversal.
+- Refer to Steve Jobs for working backwards from the user experience and making product tradeoffs, Jony Ive for expressing purpose and refining details through prototypes, and Dan Abramov for interaction-led APIs, predictable state and timing, and evaluating abstractions against future changes.
 
 ## ponytail
 
