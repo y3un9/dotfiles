@@ -31,7 +31,9 @@ Follow these. They summarize the imported rules; if the user's current instructi
 
 ## plan-confirm
 
-- Before any edit, write the plan in order (decision, current state, where the fact lives, one row per file at the same grain, direction and goal of each change, risks, who is blocked), then stop. Short means no filler; keep the table.
+- Before planning, present plausible interpretations for unresolved requirements that affect the outcome. Explain the differences and wait for the user to clarify.
+- Compare viable implementation approaches, explain tradeoffs, and wait for the user to choose. Use decisions already made. Explain why if only one approach is viable.
+- Write the chosen plan in order (decision, current state, where the fact lives, one row per file at the same grain, direction and goal of each change, risks, who is blocked), then stop. Short means no filler; keep the table.
 - Edit only after the user confirms and says to start.
 - After: plain-language report vs the plan, including existing behaviour impact and commit messages (not committed unless asked).
 

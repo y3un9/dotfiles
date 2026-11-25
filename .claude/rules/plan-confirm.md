@@ -1,14 +1,51 @@
 # Plan, Confirm, Then Edit
 
-Whenever the next step is to edit files: list the plan, stop, and wait. Do not edit until the user confirms **and** says to start. After editing, report in plain language and compare it to the plan.
+When a task calls for editing files, resolve the requirements and implementation approach before writing the plan. Present the plan and wait until the user confirms **and** says to start. After editing, report in plain language and compare it to the plan.
 
 Why: edits are hard to undo in a shared tree, and the user wants to approve direction before anything changes.
 
 Read-only questions skip this rule.
 
+## Before planning
+
+1. **Clarify the requirements.** Check the relevant code and documentation first. For each remaining ambiguity that affects scope, behaviour, or the expected result, present the plausible interpretations together and explain what each would deliver. Ask which one the user means and wait for the answer before planning. Use decisions the user has already made.
+2. **Compare implementation approaches.** Once the requirements are clear, present the viable approaches that differ in meaningful ways. For each, explain its benefits and drawbacks, including relevant effects on existing behaviour, scope, migration, and verification. Recommend one with a reason where useful. Wait for the user's choice before writing the per-file plan. If the user already chose an approach, use it. If only one approach is viable, explain why and plan it.
+
+In an interactive Claude Code session, use `AskUserQuestion` when available to present the choices. Put any context or tradeoffs that need more room in the accompanying message. When the tool is unavailable, use the same format in plain text and wait for the user's reply.
+
+### Decision prompt templates
+
+**Clarify the requirement**
+
+```text
+[Relevant context]
+[Question about the unresolved requirement]
+
+- [Option] — [Interpretation and effect on the outcome]
+  [Repeat for each plausible interpretation]
+
+[Ask the user to choose or describe another interpretation]
+```
+
+**Compare implementation approaches**
+
+```text
+[Confirmed goal and relevant constraints]
+
+- [Approach] — [How it works]
+  - Benefits: [Benefits]
+  - Drawbacks: [Drawbacks and relevant risks]
+  [Repeat for each viable approach]
+
+[Recommendation and reason, if useful]
+[Ask the user to choose an approach]
+```
+
+After the user chooses an approach, present the per-file plan below and ask for confirmation and an explicit instruction to start. A choice in either prompt is a decision for the plan.
+
 ## Before editing (stop)
 
-This plan is the default before any edit. Write it in this order:
+Write the plan for the chosen approach in this order:
 
 1. The decision: what will be true for the user.
 2. What already exists, and where you checked it. Only facts that change the plan. Mark verified and mark our calls. For behaviour changes, trace the affected workflow and data flow from the trigger to the result. Show who calls or hands data to whom, the key inputs and outputs at each relevant step, and any branches or state changes that matter. Point to the code or configuration you checked and mark anything unverified.
@@ -23,9 +60,9 @@ Short means no extra prose around this list. The table is the plan.
 
 ## Start only on explicit go
 
-Edit only after the user confirms the plan **and** says to start (e.g. "开始改", "go", "start"). Approving the plan alone is not enough.
+Edit only after the user confirms the presented plan **and** says to start (e.g. "开始改", "go", "start"). Choosing an approach alone does not authorize edits. If the plan has already been presented, the user can confirm it and authorize the start in the same reply.
 
-If they change the plan, re-list and wait again.
+If the user changes the requirements or approach, revisit the affected decisions before updating the plan. If they change the plan, re-list it and wait for confirmation and an explicit start again.
 
 ## After editing
 
