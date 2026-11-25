@@ -62,7 +62,7 @@ Short means no extra prose around this list. The table is the plan.
 
 Edit only after the user confirms the presented plan **and** says to start (e.g. "开始改", "go", "start"). Choosing an approach alone does not authorize edits. If the plan has already been presented, the user can confirm it and authorize the start in the same reply.
 
-If the user changes the requirements or approach, revisit the affected decisions before updating the plan. If they change the plan, re-list it and wait for confirmation and an explicit start again.
+After approval, handle routine implementation adjustments within the chosen approach and scope. If new evidence or a user request makes a material change necessary, revisit the affected decisions, present the revised plan, and wait for confirmation and an explicit start before doing the affected work. See autonomous-agent for how to review and correct course during implementation.
 
 ## After editing
 

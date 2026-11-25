@@ -46,7 +46,9 @@ Follow these. They summarize the imported rules; if the user's current instructi
 - If the user does not give a branch name, pick a reasonable one; still stop if current is the wrong branch.
 - If the working tree or index is dirty, stop and ask (unless it is this task's in-progress work).
 - Don't commit, push, or open a PR unless explicitly asked. Don't merge/deploy/push to prod/main/master.
-- Stay in scope. Preserve behaviour. Run tests until pass or blocked; same failure 3 times = blocked.
+- Own routine decisions and finish verification within the approved scope. Preserve existing behaviour unless the objective changes it. Return to plan-confirm for material changes.
+- Check success criteria before editing, review the diff and relevant results at meaningful checkpoints, and verify the key flow before completion. Reassess assumptions on the first contradictory result. Stop changing the affected path if the same failure persists after three attempts.
+- Flag important findings, side effects, verification blockers, and decisions with the evidence, impact, and action needed.
 - Don't claim done/passing/fixed without running the check this turn.
 - Copying a pattern into something new is fine; if the target already has its own equivalent (secret, env, config, name), check and use the target's.
 - Map an error's file/line/col to the exact code before fixing. Verify via the path that failed; if impossible say "only syntax-checked, not run".
