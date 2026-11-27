@@ -16,6 +16,12 @@
 - Start with the mobile layout. Design, implement, and check the affected interface in all three layouts. Keep the main task usable in each layout. Check portrait, landscape, and widths just below and at each breakpoint. Add wider layouts with `min-width` when using the fallback breakpoints.
 - Give the main task priority on narrow screens. On wider screens, show related context alongside it when that helps the task, such as a list and its detail view or a summary and its trend.
 
+### Reuse components, styles, and page patterns
+
+- Before proposing a UI change, check the project's design rules and the closest existing pages. Identify the shared components, layout and interaction patterns, style classes or utilities, and design tokens those pages already use.
+- Reuse an existing component or style directly when it meets the requirement. When a similar page owns its implementation locally, follow its layout or interaction pattern and compose it from existing building blocks. Keep page-specific differences local when sharing them would add unnecessary complexity.
+- If there is a gap, compare extending the shared component or style with a local implementation. Expand shared code when the difference fits its responsibility and existing callers can keep their expected behaviour. Check affected existing pages for appearance, interaction states, and accessibility. If a new implementation is needed, reuse the compatible primitives, styles, and tokens, and explain the gap in the plan.
+
 ### Browser compatibility and verification
 
 - Cover Safari on iOS, iPadOS, and macOS, Chrome on Android, and any other browsers required by the project. Check CSS and Web API support against the project's supported browser and OS versions. Use feature detection and provide a usable fallback where support varies.
@@ -100,6 +106,12 @@ Add new examples under the closest section. Record the app and platform, the pat
 
 - 从移动端布局开始。为三档布局分别设计、实现和检查受影响的界面，确保每档都能完成主要任务。检查横竖屏，以及略低于和恰好达到断点的宽度。使用默认断点时，通过 `min-width` 扩展到更宽的布局。
 - 窄屏优先展示主要任务。宽屏上，如果同时看到更多上下文能帮助用户完成任务，可以并排展示列表与详情、概览与趋势等相关内容。
+
+### 复用组件、样式和页面模式
+
+- 提出界面改动前，先查项目的设计规则和最接近的已有页面。找出这些页面已经使用的共享组件、布局和交互模式、样式类或工具类，以及设计 token。
+- 现有组件或样式满足要求时，直接复用。如果类似页面的实现只在该页面内部使用，可以参照它的布局或交互，并用现有基础组件组合。共享会带来额外复杂度时，就把页面特有的差异留在本地。
+- 现有实现有缺口时，比较扩展共享组件或样式与在当前页面实现的利弊。差异符合共享代码的职责，且能保留现有调用方预期的行为时，再扩展共享代码。检查受影响旧页面的外观、交互状态和无障碍。确实需要新建时，复用兼容的基础组件、样式和 token，并在计划里说明缺口。
 
 ### 浏览器兼容与验证
 

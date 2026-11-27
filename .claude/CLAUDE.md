@@ -32,6 +32,7 @@ Follow these. They summarize the imported rules; if the user's current instructi
 ## plan-confirm
 
 - Before planning, present plausible interpretations for unresolved requirements that affect the outcome. Explain the differences and wait for the user to clarify.
+- Before proposing frontend or backend changes, check comparable features and shared code. Reuse suitable implementations or follow existing patterns. Name the relevant files and explain any gap that warrants extending shared code or adding new code.
 - Compare viable implementation approaches, explain tradeoffs, and wait for the user to choose. Use decisions already made. Explain why if only one approach is viable.
 - Write the chosen plan in order (decision, current state, where the fact lives, one row per file at the same grain, direction and goal of each change, risks, who is blocked), then stop. Short means no filler; keep the table.
 - Edit only after the user confirms and says to start.
@@ -87,6 +88,7 @@ Follow these. They summarize the imported rules; if the user's current instructi
 
 ## frontend-design
 
+- Check similar pages first and reuse project components, styles, and design tokens. Verify existing callers when changing shared UI.
 - Start mobile-first and cover mobile, tablet, and desktop. Follow project design and breakpoint conventions. When the project has no breakpoints, use 768px for tablet and 1024px for desktop by CSS viewport width.
 - Check the affected flows on iOS and iPadOS Safari, macOS Safari, and Android Chrome. Verify feature support and provide usable fallbacks where needed.
 - Prefer current Apple, Android and Material, and Fluent guidance for clear, accessible layouts, interactions, and motion.
